@@ -11,7 +11,7 @@ public class MainBanco {
 
         int opcion;
         do {
-            System.out.println("\nMenú:");
+            System.out.println("\nMenú:Banco");
             System.out.println("1. Crear cliente");
             System.out.println("2. Ver cliente");
             System.out.println("3. Ingresar dinero");
