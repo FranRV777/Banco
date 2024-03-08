@@ -8,6 +8,7 @@ public class MainBanco {
 	        Scanner scanner = new Scanner(System.in);
 	        Cliente cliente = new Cliente("Messi", "5692A", 10, scanner);
 	        Empleado empleado = new Empleado("5810H", "Zorra", scanner);
+	        Cuenta cuenta = new Cuenta("123", "123", 24000);
 
 	        int opcion;
 	        do {
@@ -35,15 +36,15 @@ public class MainBanco {
 	                case 3:
 	                    System.out.println("Introduce la cantidad a ingresar:");
 	                    double cantidadIngreso = scanner.nextDouble();
-	                   // cuenta.ingresar(cantidadIngreso);
+	                    cuenta.ingresar(cantidadIngreso);
 	                    break;
 	                case 4:
 	                    System.out.println("Introduce la cantidad a sacar:");
 	                    double cantidadRetiro = scanner.nextDouble();
-	                   // cuenta.sacar(cantidadRetiro);
+	                    cuenta.sacar(cantidadRetiro);
 	                    break;
 	                case 5:
-	                   // cuenta.verCuenta();
+	                	cuenta.verCuenta();
 	                    break;
 	                case 6:
 	                    empleado.crearEmpleado(scanner);
@@ -60,4 +61,9 @@ public class MainBanco {
 	        } while (opcion != 0);
 	        	scanner.close(); // Cerrar el Scanner al finalizar
 	    }
-	}
+		Scanner scanner = new Scanner(System.in);
+
+ 
+
+}
+
